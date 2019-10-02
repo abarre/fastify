@@ -68,7 +68,8 @@ const cors = require('cors')
     return503OnClosing: true,
     pluginTimeout: 1000,
     onProtoPoisoning: 'error',
-    requestIdHeader: 'x-unique-id'
+    requestIdHeader: 'x-unique-id',
+    requestIdLogLabel: 'req_id'
   })
 
   const HTTPServerFactory = (handler: (req: http.IncomingMessage, res: http.ServerResponse) => void, opts: any): http.Server => {
