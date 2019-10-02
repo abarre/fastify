@@ -218,6 +218,7 @@ declare namespace fastify {
     modifyCoreObjects?: boolean,
     return503OnClosing?: boolean,
     requestIdHeader?: string,
+    requestIdLogLabel?: string,
     genReqId?: (req: HttpRequest) => string,
     serverFactory?: (handler: (req: HttpRequest, resp: HttpResponse) => void, opts: any) => HttpServer
   }
